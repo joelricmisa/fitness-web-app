@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import { ContactUsPageGraphic } from "../assets/images";
 import { SelectedPage } from "../shared/types";
 import { HeadingText } from "../components";
+import { InformationCircleIcon } from "@heroicons/react/24/solid";
 
 type Props = {
 	setSelectedPage: (value: SelectedPage) => void;
@@ -77,8 +78,9 @@ const ContactUs = ({ setSelectedPage }: Props) => {
 								})}
 							/>
 							{errors.name && (
-								<p className="mt-1 text-primary-500">
-									{errors.name.type === "required" && "This field is required."}
+								<p className="text-red-400 font-medium -mt-3 mb-3 flex gap-2">
+									<InformationCircleIcon className="h-6 w-6" />
+									{errors.name.type === "required" && "This field is required, please input your name."}
 									{errors.name.type === "maxLength" && "Max length is 100 char."}
 								</p>
 							)}
@@ -93,9 +95,10 @@ const ContactUs = ({ setSelectedPage }: Props) => {
 								})}
 							/>
 							{errors.email && (
-								<p className="mt-1 text-primary-500">
-									{errors.email.type === "required" && "This field is required."}
-									{errors.email.type === "pattern" && "Invalid email address."}
+								<p className="text-red-400 font-medium -mt-3 mb-3 flex gap-2">
+									<InformationCircleIcon className="h-6 w-6" />
+									{errors.email.type === "required" && "This field is required, please input your email."}
+									{errors.email.type === "pattern" && "Invalid email address, please input an appropriate email."}
 								</p>
 							)}
 
@@ -110,8 +113,9 @@ const ContactUs = ({ setSelectedPage }: Props) => {
 								})}
 							/>
 							{errors.message && (
-								<p className="mt-1 text-primary-500">
-									{errors.message.type === "required" && "This field is required."}
+								<p className="text-red-400 font-medium -mt-3 mb-3 flex gap-2">
+									<InformationCircleIcon className="h-6 w-6" />
+									{errors.message.type === "required" && "This field is required, please input anything that you want to say."}
 									{errors.message.type === "maxLength" && "Max length is 2000 char."}
 								</p>
 							)}
