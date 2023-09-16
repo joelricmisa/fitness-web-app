@@ -16,7 +16,7 @@ export default {
 				evolvetext: "url('/src/assets/logos/EvolveText.png')",
 			},
 			screens: {
-				xs: "480px",
+				xs: "500px",
 				sm: "768x",
 				md: "1060px",
 			},
