@@ -4,7 +4,7 @@ import image3 from "./image3.png";
 import image4 from "./image4.png";
 import image5 from "./image5.png";
 import image6 from "./image6.png";
-import HomePageGraphic from "./HomePageGraphic.png";
+import HomePageGraphic from "./HomePageGraphic.jpg";
 import BenefitsPageGraphic from "./BenefitsPageGraphic.png";
 import ContactUsPageGraphic from "./ContactUsPageGraphic.png";
 

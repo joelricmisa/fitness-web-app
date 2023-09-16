@@ -16,7 +16,7 @@ type Props = {
 const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }: Props) => {
 	const [isMenuToggled, setIsMenuToggled] = useState(false);
 	const isAboveMediumScreens = useMediaQuery("(min-width:1060px)");
-	const navBackground = isTopOfPage ? "" : "bg-primary-100 drop-shadow";
+	const navBackground = isTopOfPage ? "" : "bg-defaultGray drop-shadow";
 	return (
 		<nav>
 			<div className={`${navBackground} flex-between fixed top-0 z-30 w-full py-6 `}>
@@ -31,7 +31,7 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }: Props) => {
 						</a>
 						{isAboveMediumScreens ? (
 							<div className="flex-between w-full ">
-								<div className="flex gap-8">
+								<div className="flex gap-5 items-center">
 									{NavList.map((link, index) => (
 										<Link
 											key={index}

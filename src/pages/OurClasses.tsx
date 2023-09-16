@@ -22,7 +22,7 @@ const OurClasses = ({ setSelectedPage }: Props) => {
 						hidden: { opacity: 0, x: -50 },
 						visible: { opacity: 1, x: 0 },
 					}}>
-					<div className="md:w-3/5">
+					<div className="md:w-3/5 ">
 						<HeadingText>OUR CLASSES</HeadingText>
 						<p className="py-5">
 							Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum officiis perferendis at. Cumque laboriosam aliquam
