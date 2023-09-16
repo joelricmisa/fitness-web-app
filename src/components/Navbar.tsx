@@ -61,7 +61,7 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }: Props) => {
 
 			{!isAboveMediumScreens && isMenuToggled && (
 				<div className="fixed right-0 bottom-0 z-40 h-full w-[250px] bg-primary-100 drop-shadow-xl">
-					<div className="flex justify-end p-10">
+					<div className="flex justify-end my-10 px-5">
 						<button
 							type="button"
 							onClick={() => setIsMenuToggled(!isMenuToggled)}>
@@ -69,7 +69,7 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }: Props) => {
 						</button>
 					</div>
 
-					<div className="ml-10 flex flex-col gap-10 text-xl">
+					<div className="flex flex-col gap-5 text-xl px-5">
 						{NavList.map((link, index) => (
 							<Link
 								key={index}
