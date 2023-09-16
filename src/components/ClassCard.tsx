@@ -16,6 +16,7 @@ const ClassCard = ({ name, description, image }: Props) => {
 			<img
 				alt={`${image}`}
 				src={image}
+				className="h-full"
 			/>
 		</li>
 	);

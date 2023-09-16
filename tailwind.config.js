@@ -12,15 +12,8 @@ export default {
 			fontFamily: {
 				montserrat: ["Montserrat", "sans-serif"],
 			},
-			backgroundImage: (theme) => ({
-				"gradient-yellowred": "linear-gradient(90deg, #FF616A 0%, #FFC837 100%)",
-				"mobile-home": "url('./assets/images/HomePageGraphic.png')",
-			}),
 			content: {
 				evolvetext: "url('/src/assets/logos/EvolveText.png')",
-				abstractwaves: "url('./assets/designs/AbstractWaves.png')",
-				sparkles: "url('./assets/designs/Sparkles.png')",
-				circles: "url('./assets/designs/Circles.png')",
 			},
 			screens: {
 				xs: "480px",

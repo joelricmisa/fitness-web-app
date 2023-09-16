@@ -61,7 +61,7 @@ const Benefits = ({ setSelectedPage }: Props) => {
 				<div className="mt-16 items-center justify-between gap-20 md:mt-28 md:flex">
 					{/* GRAPHIC */}
 					<img
-						className="mx-auto"
+						className="mx-auto h-[700px] rounded-md"
 						alt="benefits-page-graphic"
 						src={BenefitsPageGraphic}
 					/>
